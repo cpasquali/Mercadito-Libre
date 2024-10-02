@@ -44,7 +44,7 @@ export const ProductScrollbar = ({ type, name, classMain, searchValue }) => {
     <section className="container">
       <h2>{name}</h2>
       <section className={`cards ${classMain}`}>
-        {data.map((product, index) => {
+        {data.slice(0, 5).map((product, index) => {
           if (index <= 5) {
             const imageUrl = product.thumbnail.startsWith("http://")
               ? product.thumbnail.replace("http://", "https://")
@@ -61,7 +61,7 @@ export const ProductScrollbar = ({ type, name, classMain, searchValue }) => {
                   <p className="card-text">
                     ${parseInt(product.price).toLocaleString("es-ES")}
                   </p>
-                  <button className="btn btn-primary">View product</button>
+                  <button className="btn btn-primary">Ver Producto</button>
                 </div>
               </article>
             );

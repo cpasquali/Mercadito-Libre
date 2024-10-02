@@ -65,28 +65,8 @@ export const NavBar = () => {
                   className="nav-link active text-white"
                   aria-current="page"
                 >
-                  Home
+                  Inicio
                 </a>
-              </li>
-              <li className="nav-item dropdown movil">
-                <a
-                  className="nav-link dropdown-toggle text-white"
-                  role="button"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  Categories
-                </a>
-                <ul className={`dropdown-menu ${isOpen ? "show" : ""}`}>
-                  {types.map((type) => (
-                    <li
-                      className="dropdown-item"
-                      onClick={() => setType(type.id)}
-                      key={type.name}
-                    >
-                      {type.name}
-                    </li>
-                  ))}
-                </ul>
               </li>
               <li className="nav-item dropdown pc">
                 <a
@@ -94,7 +74,7 @@ export const NavBar = () => {
                   role="button"
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  Categories
+                  Categoria
                 </a>
                 <ul className={`dropdown-menu ${isOpen ? "show" : ""}`}>
                   {types.map((type) => (

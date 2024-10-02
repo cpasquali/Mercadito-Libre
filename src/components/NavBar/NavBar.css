@@ -44,12 +44,3 @@
 .movil {
   display: none;
 }
-
-@media (max-width: 768px) {
-  .movil {
-    display: block;
-  }
-  .pc {
-    display: none;
-  }
-}

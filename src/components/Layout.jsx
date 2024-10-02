@@ -12,7 +12,6 @@ export const Layout = () => {
           <Route path="/" component={Products} />
         </Switch>
       </main>
-      <Footer />
     </div>
   );
 };
