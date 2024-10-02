@@ -13,7 +13,7 @@ export const Products = () => {
 
   const render = type ? (
     <ProductScrollbar
-      type={type}
+      typeId={type}
       name={type}
       key={type}
       classMain={classMain}
@@ -26,7 +26,7 @@ export const Products = () => {
     />
   ) : (
     categories.map((type) => (
-      <ProductScrollbar type={type.id} name={type.name} key={type.id} />
+      <ProductScrollbar typeId={type.id} name={type.name} key={type.id} />
     ))
   );
 

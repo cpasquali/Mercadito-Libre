@@ -23,6 +23,13 @@
   box-shadow: 0px 0px 43px -22px rgba(0, 0, 0, 0.418);
 }
 
+.card img {
+  margin-top: 40px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 12px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -33,13 +40,7 @@
   border: 1px solid rgba(0, 0, 0, 0.027);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: white;
-}
-
-.card img {
-  margin-top: 40px;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 12px;
+  max-width: 250px; /* Limita el tamaño de la tarjeta */
 }
 
 .card-body {
@@ -49,12 +50,20 @@
   justify-content: flex-start;
   text-align: center;
   flex-grow: 1;
+  width: 100%;
+  flex-wrap: wrap; /* Permite el ajuste de los elementos */
+  padding: 10px;
 }
 
 .card-title {
   margin-top: 0px;
   font-size: 16px;
   color: #333;
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el texto que sobrepasa el contenedor */
+  text-overflow: ellipsis; /* Muestra "..." cuando el texto es truncado */
+  width: 100%; /* Asegura que ocupe todo el espacio disponible en su contenedor */
+  max-width: 200px; /* Limita el ancho máximo del título */
 }
 
 .card-text {
