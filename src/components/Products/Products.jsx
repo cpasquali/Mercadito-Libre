@@ -1,6 +1,6 @@
 import "./Products.css";
 import { categories } from "./types";
-import { ProductScrollbar } from "./ProductScrollbar/ProductScrollbar.JSX";
+import { ProductScrollbar } from "./ProductScrollbar/ProductScrollbar.jsx";
 import { SelectTypeProductContext } from "../../context/SelectTypeProduct";
 import { SearchProductContext } from "../../context/SearchProductContext";
 import { useContext } from "react";
