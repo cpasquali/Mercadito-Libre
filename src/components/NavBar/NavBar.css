@@ -1,0 +1,55 @@
+.navbar-container {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  visibility: visible;
+  z-index: 1;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link .active {
+  color: white;
+}
+
+.navbar.navbar-expand-lg {
+  background-color: #32a5f1;
+  box-shadow: 0px 13px 18px -22px rgba(0, 0, 0, 0.315);
+}
+
+.navbar-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+}
+
+.movil {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .movil {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
